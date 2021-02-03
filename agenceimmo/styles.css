@@ -10,18 +10,25 @@
 
 html body {
     size: 100vh;
+    background-color: rgb(230, 230, 230);
 }
 /*header*/
 
 header {
 background-color: #333;
+padding: 0.5rem;
+display: flex;
+justify-content: space-between;
+}
+
+header div{
+    display: flex;
 }
 
 header h1{
     font-family: "Long Cang", cursive;
     color: white;
-    margin-top: 1rem;
-}
+       }
 
 header i {
     color: gold;
@@ -29,7 +36,115 @@ header i {
     
 }
 
+
+
+.contener1{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    padding: 0.5rem;
+    }
+
+
+/*liste top*/
+
+header li{
+    padding: 0.2rem;
+}
+
 header nav a{
     color: white;
+    text-decoration: none;
+}
+
+
+nav ul li a:hover{
+    color: gold;
+}
+
+/*section1 avec background image*/
+
+.section1{
+background-image: url(/agenceimmo/Images/frame.jpg);
+background-size: cover;
+padding: 10rem;
+
+}
+
+.divtop{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.divtop h2{
+    font-size: 2rem;
+}
+
+.divtop h2 span{
+    color: gold;
+}
+
+.divtop p {
+    padding-top: 1rem;
+}
+
+
+/* section 2 avec les 3 apparts*/
+
+.section2 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.section2 h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    color:rgb(148, 147, 147);
+    margin: 2rem 0rem 2rem 1rem;
+}
+
+/*les 3 apparts*/
+
+.contentappart{
+    display: flex;
+    flex-direction: row;
+}
+
+.appart{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
+    width: 30%;
+    background-color: white;
+    }
+
+#infoappart{
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    flex-wrap: nowrap;
+    padding: 2rem;
     
+}
+
+.appart img{
+    width: 100%;
+    height: 18rem;
+    padding: auto;
+}
+
+.section2 hr{
+    background-color: black;
+    width: 5rem;
+    height: 0.1rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
